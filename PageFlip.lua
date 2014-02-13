@@ -1,13 +1,12 @@
 --[[
-PageFlip.lua for Cylinder v1.0
+- @supermamon | 13 Feb 2014
 
-- @supermamon
-- 13 Feb 2014
+PageFlip effect v1.0
+		
 ]]
-local M_PI = 3.14159265
-
+local fade = dofile("include/fade.lua")
 return function(page, offset, width, height)
-
+	local M_PI = 3.14159265
 	local percent = offset/width
     local angle = percent*M_PI
 	local x = percent
@@ -15,8 +14,6 @@ return function(page, offset, width, height)
 
     page:translate(x, 0, 0)
     page:rotate(angle, 0, 1, 0)
-    
-    if percent < 0 then percent = -percent end
-    page.alpha = 1 - percent*percent*percent
-	
+
+	fade(page,percent)
 end

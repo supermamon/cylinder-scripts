@@ -1,9 +1,11 @@
 --[[
+- @supermamon | 13 Feb 2014
+
+PageSpin v1.0
+
 Basically copied the Spin effect and applied it to the page. 
 Nothing to brag about
-
-- @supermamon
-- 13 Feb 2014
+	
 ]]
 local M_PI = 3.14159265
 

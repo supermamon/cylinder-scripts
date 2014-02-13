@@ -1,11 +1,13 @@
 --[[
-Another modification of the built-in Spin effect.
+- @supermamon | 13 Feb 2014
+
+AlternateSpin v1.0
+
+A modification of the built-in Spin effect.
 This reverses the spin direction of every other icon
 
-- @supermamon
-- 13 Feb 2014
+		
 ]]
-
 local M_PI = 3.14159265
 
 local function spin(view, percent)

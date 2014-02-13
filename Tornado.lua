@@ -1,11 +1,13 @@
 --[[
-Merged the original Cube (Outside)and Spin
-Renamed to Tornado
+- @supermamon | 13 Feb 2014
 
-- @supermamon
-- 13 feb 2014
+Tornado v1.0
+
+Merged the original Cube (Outside)and Spin
+	
 ]]
 local cube = dofile("include/cube.lua")
+local fade = dofile("include/fade.lua")
 local M_PI = 3.14159265
 
 local function spin(view, percent)
@@ -24,7 +26,5 @@ return function(page, offset, width, height)
     local percent = offset/width
     spin(page, percent)
 	cube(page, width, offset/width, false)
-	
-    if percent < 0 then percent = -percent end
-    page.alpha = 1 - percent*percent*percent	
+	fade(page,percent)
 end

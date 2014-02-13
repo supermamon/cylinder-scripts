@@ -1,5 +1,14 @@
+--[[
+- @supermamon | 13 Feb 2014
+
+flipIcons function
+	view	: assign to page
+	percent	: percentage of transition
+	direction: "h" for horizontal, "v" for vertical"
+		
+]]
 return function (view, percent, direction)
-	
+	local M_PI = 3.14159265
     local angle = percent*M_PI
 	local pitch = 0
 	local yaw = 0
