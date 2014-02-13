@@ -1,5 +1,6 @@
 --[[
 Merged the original Cube (Outside)and Spin
+Renamed to Tornado
 
 - @supermamon
 - 13 feb 2014
