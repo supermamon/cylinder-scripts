@@ -4,9 +4,9 @@
 FlipIcons (Horizontal) v1.0
 		
 ]]
-local fade = dofile("include/fade.lua")
-local flipIcons = dofile("include/flipIcons.lua")
-local stayPut = dofile("include/stayPut.lua")
+local fade = dofile("inc-supermamon/sm-fade.lua")
+local flipIcons = dofile("inc-supermamon/sm-flipIcons.lua")
+local stayPut = dofile("inc-supermamon/sm-stayPut.lua")
 
 return function(page, offset, width, height)
     local percent = offset/width

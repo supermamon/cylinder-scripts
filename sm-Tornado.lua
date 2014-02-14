@@ -7,7 +7,7 @@ Merged the original Cube (Outside)and Spin
 	
 ]]
 local cube = dofile("include/cube.lua")
-local fade = dofile("include/fade.lua")
+local fade = dofile("inc-supermamon/sm-fade.lua")
 local M_PI = 3.14159265
 
 local function spin(view, percent)
