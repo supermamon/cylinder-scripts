@@ -1,30 +1,20 @@
 --[[
 - @supermamon | 13 Feb 2014
 
-Tornado v1.0
+Tornado v1.1
 
-Merged the original Cube (Outside)and Spin
+v1.1 Moved the icon spinning to a library
+v1.0 Merged the original Cube (Outside), Spin, Fade
 	
 ]]
 local cube = dofile("include/cube.lua")
 local fade = dofile("inc-supermamon/sm-fade.lua")
-local M_PI = 3.14159265
-
-local function spin(view, percent)
-    local angle = percent*M_PI*2
-
-    local i = 0
-    while true do
-        i = i + 1
-        local v = view[i]
-        if v == nil then break end
-        v:rotate(angle)
-    end
-end
+local iconSpin = dofile("inc-supermamon/sm-iconSpin.lua")
 
 return function(page, offset, width, height)
     local percent = offset/width
-    spin(page, percent)
-	cube(page, width, offset/width, false)
+	
+    iconSpin(page, percent,1)
+	cube(page, width, percent, false)
 	fade(page,percent)
 end
