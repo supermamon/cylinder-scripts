@@ -3,7 +3,8 @@
 
 Ant Lines (Horizontal) 1.0
 
-Alternating Slide left/right transition
+Alternating Slide left/right transition.
+Does not work as advertised on landscape iPad and inside folders
 
 v1.0 First Release
 		

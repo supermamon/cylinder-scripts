@@ -1,0 +1,25 @@
+--[[
+- @supermamon | 15 Feb 2014
+
+Slide (Down) v1.0
+
+Basic Slide Down
+
+v1.0 First Release
+		
+]]
+local fade = dofile("inc-supermamon/sm-fade.lua")
+local stayPut = dofile("inc-supermamon/sm-stayPut.lua")
+
+return function(page, offset, width, height)
+
+	-- some generic stuff
+	local view=page 						-- so i can just always use view
+	local percent = offset/width 			-- progress of how far ahead till the next page
+	
+	-- ** PAGE EFFECTS ** --
+	fade(page,percent)
+	stayPut(page,offset, width)
+	view:translate(0,height*percent,0)
+	
+end
