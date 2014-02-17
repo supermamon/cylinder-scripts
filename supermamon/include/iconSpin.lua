@@ -13,14 +13,17 @@ Parameters
 v1.1 2014-02-16: Compatibility update for Cylinder v0.13.2.15
 v1.0 2014-02-15: First Release
 ******************************************************** ]]
-return function (page, percent, tumbles)
+return function (page, percent, tumbles, reverse)
     local angle = percent*math.pi*2*tumbles
 
     local i = 0
+	
+	local direction = reverse and -1 or 1
     while true do
         i = i + 1
         local icon = page[i]
         if icon == nil then break end
-        icon:rotate(angle)
+		
+        icon:rotate(direction*angle)
     end
 end
