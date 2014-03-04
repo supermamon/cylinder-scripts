@@ -1,8 +1,9 @@
 --[[ ******************************************************************
-Explosion v1.0
+Explosion v1.1
 by @supermamon (github.com/supermamon/cylinder-scripts/)
 request by: /u/gertab
 
+v1.1 2014-03-04: Icons father from the center move away faster.
 v1.0 2014-03-04: First release.
 		
 ******************************************************************* ]]
@@ -13,7 +14,7 @@ return function(pg, of, sw, sh)
 
     local pc, cx, cy = math.abs(of/pg.width), pg.width/2, pg.height/2
 	-- target distance
-	local tg = pg.height
+	local tg = pg.width
 	
     for i, ic in subviews(pg) do
 		-- get icon center
@@ -25,7 +26,7 @@ return function(pg, of, sw, sh)
 		-- get hypotenuse
 		local h = math.sqrt( ox^2+oy^2)
 		-- get hypotenuse extension
-		local oh = pc*tg
+		local oh = pc*tg+pc*h
 		-- directions
 		local dx, dy = 1,1
 		if icx<cx then dx=-dx end
