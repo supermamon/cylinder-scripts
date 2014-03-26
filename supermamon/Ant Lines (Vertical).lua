@@ -1,9 +1,10 @@
 --[[ ******************************************************************
-Ant Lines (Vertical) v1.2
+Ant Lines (Vertical) v1.3
 by @supermamon (github.com/supermamon/cylinder-scripts/)
 
 Alternating Slide up/down transition
 
+v1.3 2014-02-18: Compatibility update
 v1.2 2014-02-18: Fixed for folders
 v1.1 2014-02-16: Compatibility update for Cylinder v0.13.2.15
 v1.0 2014-02-15: First Release
@@ -26,10 +27,8 @@ return function(page, offset, screen_width, screen_height)
     local i = 0
 	local direction = 1 
 	local lastX = page.width
-    while true do
-        i = i + 1
-        local icon = page[i]
-        if icon == nil then break end
+
+    for i, icon in subviews(page) do
 		
 		-- reverse the direction alternately 
 		direction = -direction 
