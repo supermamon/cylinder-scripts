@@ -18,7 +18,7 @@ Effects Ideas
 * Tube
 	Like a spring, tilt horizontally, and rotate
 * Elastic Band
-	Like holding a rubber band with a heavy object at the end.
+	Like the mouse trail effect you see on DynamicDrive. 
 
 	
 	
