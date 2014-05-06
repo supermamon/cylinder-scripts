@@ -1,0 +1,28 @@
+Effects Ideas
+* FlightBoard
+	Random vertical icon flips. Split by row. Like an airport flightboard
+* Bomb 
+	First icon will drop to the center and explode other icons.
+* Zipper
+	Split progressively in the center of the screen. Vertical/Horizontal
+* Burn
+	Expanding hole from the center going outwards
+* Fallen Icons
+	Drop the icons quickly to the bottom. 
+	Randomly move them like fallen leaves blown away by a fast moving car
+* Milky Way
+	Form a spiral. Then rotate it.
+	http://msemac.redwoods.edu/~darnold/math50c/CalcProj/Fall98/DarrenT/equiangularSpiral4Bug.gif
+* Double-Helix
+	Two horizontal lines of icons, moving like snakes crossing each other
+* Tube
+	Like a spring, tilt horizontally, and rotate
+* Elastic Band
+	Like the mouse trail effect you see on DynamicDrive. 
+
+	
+	
+
+	
+	
+	

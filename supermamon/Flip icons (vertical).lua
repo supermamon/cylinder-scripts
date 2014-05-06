@@ -7,7 +7,7 @@ v1.0 2014-02-13: First release.
 		
 ******************************************************************* ]]
 local fade = dofile("include/fade.lua")
-local flipIcons = dofile("include/flipIcons.lua")
+local iconFlip = dofile("include/iconFlip.lua")
 local stayPut = dofile("include/stayPut.lua")
 
 return function(page, offset, screen_width, screen_height)
@@ -16,9 +16,11 @@ return function(page, offset, screen_width, screen_height)
 	local percent = offset/page.width
 	
 	-- ** PAGE EFFECTS ** --
-	fade(page,percent)
+    if math.abs(percent) >= 0.5 then
+        page.alpha = 0
+    end
 	stayPut(page, offset)
 	
 	-- ** ICON EFFECTS ** --
-    flipIcons(page, percent, "v")
+    iconFlip(page, percent, "v")
 end
