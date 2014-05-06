@@ -3,6 +3,11 @@ cylinder-scripts
 
 This is a collection of "effects" scripts build for Cylinder jailbreak tweak.
 
+* Noteable Combinations
+Vertical Scrolling + Cube Outside
+
+
+
 Cylinder Installation
 [http://r333d.com/repo](http://r333d.com/repo)
 
